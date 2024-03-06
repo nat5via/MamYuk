@@ -1,24 +1,44 @@
 package com.example.myapplication
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 
 class DetailActivity : AppCompatActivity() {
     companion object {
-        const val EXTRA_AGE = "extra_age"
-        const val EXTRA_NAME = "extra_name"
+        const val foodName = "foodname"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val name = intent.getStringExtra(EXTRA_NAME)
-        val age = intent.getIntExtra(EXTRA_AGE, 0)
-        val text = "Name : $name, Your Age : $age"
+        val tvName: TextView = findViewById(R.id.TitleFood)
+        val tvDesc: TextView = findViewById(R.id.DescriptionDetail)
+        val tvFood: ImageView = findViewById(R.id.DetailedImage)
 
-        val tvDataReceived: TextView = findViewById(R.id.tv_data_received)
-        tvDataReceived.text = text
+        val food = if (Build.VERSION.SDK_INT >= 33) {
+            intent.getParcelableExtra<Food>(foodName, Food::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra<Food>(foodName)
+        }
+
+        if (food != null) {
+            val text = "Name : ${food.name} "
+            tvName.text = text
+            tvDesc.text = food.description
+
+            // Load image using Glide
+            food.photo?.let { photoUrl ->
+                Glide.with(this)
+                    .load(photoUrl) // Load image from URL or drawable file name stored in photo property
+                    .into(tvFood)
+            }
+        }
     }
 }
+

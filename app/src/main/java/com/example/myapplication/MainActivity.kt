@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -72,5 +73,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSelectedFood(food: Food) {
         Toast.makeText(this, "Anda memilih " + food.name, Toast.LENGTH_SHORT).show()
+        val moveWithObjectIntent = Intent(this@MainActivity, DetailActivity::class.java)
+        moveWithObjectIntent.putExtra(DetailActivity.foodName,food )
+        startActivity(moveWithObjectIntent)
     }
 }
