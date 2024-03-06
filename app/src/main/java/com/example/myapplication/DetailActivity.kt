@@ -28,7 +28,7 @@ class DetailActivity : AppCompatActivity() {
         }
 
         if (food != null) {
-            val text = "Name : ${food.name} "
+            val text = "${food.name} "
             tvName.text = text
             tvDesc.text = food.description
 
