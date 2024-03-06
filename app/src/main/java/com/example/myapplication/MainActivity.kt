@@ -1,10 +1,12 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rvFoods: RecyclerView
     private val list = ArrayList<Food>()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +26,14 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(getListFoods())
         showRecyclerList()
+
+        val aboutMeImageView: ImageView = findViewById(R.id.AboutMe)
+
+        aboutMeImageView.setOnClickListener {
+            val intent = Intent(this@MainActivity, AboutMe::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -48,23 +59,18 @@ class MainActivity : AppCompatActivity() {
         val dataPhoto = resources.getStringArray(R.array.data_photo)
         val listFood = ArrayList<Food>()
         for (i in dataName.indices) {
-            val hero = Food(dataName[i], dataDescription[i], dataPhoto[i])
-            listFood.add(hero)
+            val food = Food(dataName[i], dataDescription[i], dataPhoto[i])
+            listFood.add(food)
         }
         return listFood
     }
 
     private fun showRecyclerList() {
-//        if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-//            rvFoods.layoutManager = GridLayoutManager(this, 2)
-//        } else {
-//            rvFoods.layoutManager = LinearLayoutManager(this)
-//        }
         rvFoods.layoutManager = LinearLayoutManager(this)
-        val listHeroAdapter = ListFoodAdapter(list)
-        rvFoods.adapter = listHeroAdapter
+        val listFoodAdapter = ListFoodAdapter(list)
+        rvFoods.adapter = listFoodAdapter
 
-        listHeroAdapter.setOnItemClickCallback(object : ListFoodAdapter.OnItemClickCallback {
+        listFoodAdapter.setOnItemClickCallback(object : ListFoodAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Food) {
                 showSelectedFood(data)
             }
@@ -72,9 +78,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedFood(food: Food) {
-        Toast.makeText(this, "Anda memilih " + food.name, Toast.LENGTH_SHORT).show()
         val moveWithObjectIntent = Intent(this@MainActivity, DetailActivity::class.java)
-        moveWithObjectIntent.putExtra(DetailActivity.foodName,food )
+        moveWithObjectIntent.putExtra(DetailActivity.foodName, food)
         startActivity(moveWithObjectIntent)
     }
 }
