@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MamYuk</string>
+    <string name="data_received">Data Received:</string>
+    <string name="heroes_name">Nama Makanan</string>
+    <string name="description">Informasi</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string-array name="data_name">
+        <item>Soto Padang</item>
+        <item>Bubur Manado</item>
+        <item>Sop Konro</item>
+        <item>Sate Lilit</item>
+        <item>Bubur Candil</item>
+        <item>Pempek Palembang</item>
+        <item>Seblak</item>
+        <item>Batagor</item>
+        <item>Tahu Tek</item>
+        <item>Rawon</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Soto padang adalah hidangan berkuah kaldu sapi dengan bahan irisan daging sapi yang sudah digoreng kering, bihun, ditambah perkedel kentang dan dihidangkan panas-panas. Hidangan ini berasal dari kota Padang, Sumatera Barat.[1][2] Selain di kota Padang, Sumatera Barat, hidangan soto padang juga mudah ditemukan di berbagai restoran Padang di penjuru dunia.</item>
+        <item>Tinutuan atau Bubur Manado adalah salah satu makanan khas Indonesia dari Manado, Sulawesi Utara. Ada juga yang mengatakan tinutuan adalah makanan khas Minahasa, Sulawesi Utara. Tinutuan merupakan campuran berbagai macam sayuran, tidak mengandung daging, sehingga makanan ini bisa menjadi makanan pergaulan antarkelompok masyarakat di Manado. Tinutuan biasanya disajikan untuk sarapan pagi beserta berbagai pelengkap hidangannya. Walaupun demikian, tinutuan umumnya tetap dapat ditemukan di berbagai rumah makan di luar waktu sarapan.</item>
+        <item>Sop Konro adalah hidangan istimewa yang berasal dari Makassar, Indonesia. Hidangan ini terkenal dengan cita rasa kaya dan gurih, terbuat dari tulang iga sapi dan campuran rempah-rempah yang harum.</item>
+        <item>Sate Lilit adalah sebuah varian sate asal Bali. Sate ini terbuat dari daging babi, ikan, ayam, daging sapi, atau bahkan kura-kura yang dicincang, kemudian dicampur dengan parutan kelapa, santan, jeruk nipis, bawang merah, dan merica. Daging cincang yang telah berbumbu dilekatkan pada sebuah bambu atau tebu, kemudian dipanggang di atas arang. Tidak seperti sate lainnya yang dibuat dengan tusuk sate yang sempit dan tajam, tusuk sate lilit berbentuk datar dan lebar. Permukaan yang lebih luas memungkinkan daging cincang untuk melekat. Istilah “lilit” dalam bahasa Bali dan Indonesia berarti “membungkus”, yang sesuai untuk cara pembuatan sate ini.</item>
+        <item>Candil adalah makanan Indonesia berupa bubur yang terbuat dari tepung ketan, gula merah, dan santan. Tepung ketan dicampur dengan sedikit tepung kanji dan air dingin, kemudian dibentuk bulat dan direbus dalam air gula. Bubur candil disajikan dengan disiram kuah santan. Karena bentuknya yang bulat, bubur ini juga dikenal sebagai bubur biji salak.</item>
+        <item>Pempek adalah makanan khas Palembang, Sumatera Selatan. Proses pembuatannya melibatkan daging ikan yang digiling lembut, dicampur dengan tepung kanji atau tepung sagu, serta bahan-bahan lain seperti telur, bawang putih, penyedap rasa, dan garam. Setelah dibentuk, pempek digoreng dan biasanya disajikan dengan kuah cuko yang memiliki rasa asam, manis, dan pedas</item>
+        <item>Seblak adalah makanan khas Bandung, Jawa Barat yang terbuat dari kerupuk aci serta kuah berbumbu rempah dengan rasa pedas. Seblak biasanya akan dibuat secara langsung oleh pedagang ketika ada pembeli dengan isian yang disesuaikan dengan pesanan.</item>
+        <item>Batagor adalah makanan khas Bandung, Jawa Barat. Singkatan dari Bakso Tahu Goreng, batagor mirip dengan siomay yang digoreng. Proses pembuatannya melibatkan tahu yang dilembutkan dan diisi dengan adonan berbahan dasar ikan tenggiri dan tepung tapioka. Kemudian, tahu yang telah diisi adonan dibentuk menyerupai bola dan digoreng dalam minyak panas hingga matang. </item>
+        <item>Tahu Tek adalah makanan yang pada dasarnya berisi tahu setengah matang dengan siraman saus kacang. Untuk lebih lengkap, tahu tek berisi tahu setengah matang, kentang goreng, lontong yang disiram dengan saus kacang. Tak lupa untuk tambahan ada yang ditambah dengan kecambah pendek dan yang paling penting kerupuk. </item>
+        <item>Rawon adalah masakan khas Indonesia yang berasal dari Ponorogo. Ini adalah sup daging berkuah hitam dengan campuran bumbu khas yang menggunakan kluwek. Meskipun kluwek mengandung racun jenis sianida, makanan ini telah berusia lebih dari 1.000 tahun. Rawon dari Ponorogo menyebar ke penjuru Jawa Timur dan dikenal sebagai masakan khas daerah tersebut. Daging yang umumnya digunakan untuk rawon adalah daging sapi, terutama bagian sandung lamur. Namun, terkadang rawon juga dibuat dengan daging ayam. </item>
+    </string-array>
+    <string-array name="data_photo">
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4862/ilustrasu-batagor.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4858/ilustrasi-bubur-candil.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4856/ilustrasi-bubur-manado.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4860/ilustrasi-pempek.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2019/12/28/2399/ilustrasi-rawon-setan-surabaya.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4766/ilustrasi-sate-lilit.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4861/ilustrasi-seblak-bandung.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4857/ilustrasi-sop-konro-.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4759/ilustrasi-soto-padang.jpg</item>
+        <item>https://cdns.diadona.id/diadona.id/resized/664xauto//real/2020/01/02/4863/ilustrasi-tahu-tek.jpg</item>
+    </string-array>
+</resources>
